@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="shift-JIS">
     <title>勤怠一覧画面</title>
@@ -15,16 +15,13 @@
     	</tr>
     	
     	<tr>
-    		<th></th>
-    		<th></th>
-    		<th></th>
+    		<div th:object="${kintai}">
+	    		<th>[[*{kiDate}]]</th>
+	    		<th>[[*{kiStart}]]</th>
+	    		<th>[[*{kiEnd}]]</th>
+    		</div>
     	</tr>
-    	
-    	<tr>
-    		<th></th>
-    		<th></th>
-    		<th></th>
-    	</tr>
+
     </table>
     
   </body>
