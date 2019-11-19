@@ -1,4 +1,8 @@
 test
 test
 test
+<<<<<<< HEAD
 ikedashun
+=======
+sugitest
+>>>>>>> cb06397c9896de7bc1bca1b6e6a750e41c163c38
