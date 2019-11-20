@@ -35,4 +35,17 @@ public class HelloController {
         return mav;
     }
 
+//<<<<<<< HEAD
+//=======s
+//	@RequestMapping(value = "/kintai")
+//	private String kintai() {
+//		return "/register.html";
+//	}
+//
+//	@RequestMapping(value = "/list")
+//	private String list() {
+//		return "/kintai_List.html";
+//	}
+//
+//>>>>>>> d87ce5bd53aa23bbd3751f8c91c5ded89f0c56f8
 }
