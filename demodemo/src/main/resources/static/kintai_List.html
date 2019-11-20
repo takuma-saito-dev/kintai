@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="shift-JIS">
+    <title>勤怠一覧画面</title>
+  </head>
+  <body>
+    <h1>勤怠一覧画面</h1>
+
+    <table border="1">
+    	<tr>
+    		<th>日付</th>
+    		<th>出勤時間</th>
+    		<th>退勤時間</th>
+    	</tr>
+
+    	<tr>
+    		<div th:object="${kintai}">
+	    		<th>[[*{kiDate}]]</th>
+	    		<th>[[*{kiStart}]]</th>
+	    		<th>[[*{kiEnd}]]</th>
+    		</div>
+    	</tr>
+
+    </table>
+
+  </body>
+</html>
