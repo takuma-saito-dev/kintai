@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>勤怠一覧画面</title>
+  </head>
+  <body>
+    <h1>勤怠一覧画面</h1>
+
+    <table border="1">
+    	<tr>
+    		<th>日付</th>
+    		<th>出勤時間</th>
+    		<th>退勤時間</th>
+    	</tr>
+
+    	<tr>
+    			<th th:text="*{kiDate}"></th>
+	    		<th th:text="*{kiStart}"></th>
+	    		<th th:text="*{kiEnd}"></th>
+    	</tr>
+
+    </table>
+
+  </body>
+</html>
